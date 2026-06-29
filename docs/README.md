@@ -2,7 +2,7 @@
 
 Binary-only Maya 2024 plugin package for SWG asset import/export work.
 
-This public package includes the compiled C++ Maya plugin, required helper executables, the installer, and public docs only. It does not include Python source, C++ source, audit reports, development fixtures, or internal JSON status files.
+This public package includes the compiled C++ Maya plugin, required helper executables, the installer, and public docs.
 
 ## Install
 
@@ -72,7 +72,3 @@ Verified areas include:
 ## Scope Boundaries
 
 The build does not claim broad source-faithful output where original source behavior or original exporter fixture bytes have not proved it. Optional follow-up areas include broader POB/static hierarchy fixture breadth, broader animation fixture breadth, Alienbrain/Perforce behavior, and source-control integration.
-
-## Distribution Boundary
-
-You can publish this package as a compiled-only release. Do not publish the development workspace if you want to keep the C++ and Python source private.
