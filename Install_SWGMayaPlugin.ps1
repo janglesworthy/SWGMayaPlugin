@@ -488,7 +488,8 @@ $Manifest = [ordered]@{
     helperSha256 = $HelperHashes
     launchMel = @(
         "loadPlugin `"$PluginFileName`";",
-        "swgPort_openStaticPackageQueueUi;"
+        "swgPort_openStaticPackageQueueUi;",
+        "swgPort_openHelp;"
     )
 }
 
@@ -505,3 +506,4 @@ Write-Host ""
 Write-Host "In Maya, run:"
 Write-Host "  loadPlugin `"$PluginFileName`";"
 Write-Host "  swgPort_openStaticPackageQueueUi;"
+Write-Host "  swgPort_openHelp;"

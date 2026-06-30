@@ -32,6 +32,7 @@ The installer writes:
 ```mel
 loadPlugin "SwgMaya2024PortPlugin.mll";
 swgPort_openStaticPackageQueueUi;
+swgPort_openHelp;
 ```
 
 The operator UI exposes:
