@@ -71,4 +71,6 @@ Verified areas include:
 
 ## Scope Boundaries
 
+The Import tab's `.ans` option is diagnostic/preflight only: it source-parses KFAT/CKAT animation payloads and does not create or modify Maya animation curves. Source-faithful `.ans` coverage in this build is export-side only.
+
 The build does not claim broad source-faithful output where original source behavior or original exporter fixture bytes have not proved it. Optional follow-up areas include broader POB/static hierarchy fixture breadth, broader animation fixture breadth, Alienbrain/Perforce behavior, and source-control integration.

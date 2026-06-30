@@ -10,7 +10,7 @@ powershell -ExecutionPolicy Bypass -File .\Install_SWGMayaPlugin.ps1
 
 The installer looks for Maya 2024 through `-MayaLocation`, `MAYA_LOCATION`, Autodesk registry entries, and normal Autodesk install folders. It fails closed if it cannot find a compatible Maya 2024 install.
 
-The release package is binary-only. It installs the compiled Maya plugin, required helper executables, this help file, the README, and the public installer script. It does not install Python source, C++ source, audit files, or JSON reports in the public docs folder.
+The release package installs the compiled Maya plugin, required helper executables, this help file, the README, and the public installer script.
 
 ## Load In Maya
 
@@ -30,6 +30,10 @@ The operator window has five public tabs:
 - Settings
 
 The package/debug/audit tooling used during development is intentionally not shipped in the public UI.
+
+## Import Notes
+
+`Animation Diagnostic (.ans)` validates source-shaped `.ans` KFAT/CKAT payloads. It does not create or modify Maya animation curves. Source-faithful `.ans` coverage in this build is export-side only.
 
 ## Helper Executables
 
