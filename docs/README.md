@@ -1,8 +1,8 @@
 # SWG Maya 2024 Plugin
 
-Binary-only Maya 2024 plugin package for SWG asset import/export work.
+Maya 2024 plugin package for SWG asset import/export work.
 
-This public package includes the compiled C++ Maya plugin, required helper executables, the installer, and public docs.
+This package includes the Maya plugin, required helper executables, the installer, and documentation.
 
 ## Install
 
@@ -41,8 +41,6 @@ The operator UI exposes:
 - Blend Shapes
 - POB Tools
 - Settings
-
-Internal development package, result, audit, and debug tabs are not exposed in the public UI.
 
 ## Included Runtime Files
 

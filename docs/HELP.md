@@ -10,7 +10,7 @@ powershell -ExecutionPolicy Bypass -File .\Install_SWGMayaPlugin.ps1
 
 The installer looks for Maya 2024 through `-MayaLocation`, `MAYA_LOCATION`, Autodesk registry entries, and normal Autodesk install folders. It fails closed if it cannot find a compatible Maya 2024 install.
 
-The release package installs the compiled Maya plugin, required helper executables, this help file, the README, and the public installer script.
+The release package installs the Maya plugin, required helper executables, this help file, the README, and the installer script.
 
 ## Load In Maya
 
@@ -28,8 +28,6 @@ The operator window has five public tabs:
 - Blend Shapes
 - POB Tools
 - Settings
-
-The package/debug/audit tooling used during development is intentionally not shipped in the public UI.
 
 ## Import Notes
 
