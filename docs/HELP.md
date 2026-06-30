@@ -33,7 +33,7 @@ The package/debug/audit tooling used during development is intentionally not shi
 
 ## Import Notes
 
-`Animation Diagnostic (.ans)` validates source-shaped `.ans` KFAT/CKAT payloads. It does not create or modify Maya animation curves. Source-faithful `.ans` coverage in this build is export-side only.
+`Animation (.ans)` imports source-parsed KFAT/CKAT joint animation channels onto matching Maya skeleton joints. Import or load the matching skeleton first, then use the skeleton root group; unresolved or ambiguous targets fail closed.
 
 ## Helper Executables
 

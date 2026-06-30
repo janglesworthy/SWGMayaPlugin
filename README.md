@@ -66,11 +66,12 @@ Verified areas include:
 - shader/template package fidelity for the proven corpus
 - skeleton and SAT export for controlled fixture scopes
 - animation export for controlled compressed and uncompressed single/two-joint `.ans` fixture scopes
+- animation import for source-parsed KFAT/CKAT `.ans` joint rotation/translation keys onto matching Maya skeleton joints
 - helper-gated legacy texture compression path
 - POB import/export tools for the verified fixture-backed scope
 
 ## Scope Boundaries
 
-The Import tab's `.ans` option is diagnostic/preflight only: it source-parses KFAT/CKAT animation payloads and does not create or modify Maya animation curves. Source-faithful `.ans` coverage in this build is export-side only.
+The Import tab's `.ans` option imports source-parsed KFAT/CKAT animation channels onto matching Maya joints. Load or import the matching skeleton first, then pass/select its root group so `.ans` transform names can resolve; unresolved or ambiguous skeleton targets fail closed instead of creating a partial animation.
 
 The build does not claim broad source-faithful output where original source behavior or original exporter fixture bytes have not proved it. Optional follow-up areas include broader POB/static hierarchy fixture breadth, broader animation fixture breadth, Alienbrain/Perforce behavior, and source-control integration.
