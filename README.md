@@ -73,4 +73,4 @@ Verified areas include:
 
 The Import tab's `.ans` option imports source-parsed KFAT/CKAT animation channels onto matching Maya joints. Load or import the matching skeleton first, then pass/select its root group so `.ans` transform names can resolve. Importing another `.ans` onto the same skeleton replaces existing rotate/translate animation keys on matching joints. Unresolved or ambiguous skeleton targets fail closed instead of creating a partial animation.
 
-The build does not claim broad source-faithful output where original source behavior or original exporter fixture bytes have not proved it. Optional follow-up areas include broader POB/static hierarchy fixture breadth, broader animation fixture breadth, Alienbrain/Perforce behavior, and source-control integration.
+The build does not claim broad source-faithful output where original source behavior or original exporter fixture bytes have not proved it. Optional follow-up areas include broader POB/static hierarchy fixture breadth and broader animation fixture breadth.
