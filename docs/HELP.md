@@ -159,7 +159,7 @@ Workflow:
 3. Import the `.ans`.
 4. Play the Maya timeline.
 
-The importer applies source-parsed rotation and translation channels to matching Maya joints. If the skeleton target is missing or ambiguous, the command fails instead of applying a partial animation.
+The importer applies source-parsed rotation and translation channels to matching Maya joints. Importing another `.ans` onto the same skeleton replaces existing rotate/translate animation keys on matching joints before applying the new animation. If the skeleton target is missing or ambiguous, the command fails instead of applying a partial animation.
 
 ## Export Tab
 
@@ -348,6 +348,7 @@ If an animation import does nothing, check:
 - The matching skeleton is already in the scene.
 - `Root Group` points to the skeleton root or a group containing it.
 - The joint names in the `.ans` can resolve to Maya joints.
+- When switching animations, import the next `.ans` with the same skeleton root/group selected.
 
 If a POB import is incomplete, check:
 
